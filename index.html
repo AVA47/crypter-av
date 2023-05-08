@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypter</title>
+
+    <link href="img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="dark-button">
+        <label class="switch">
+            <input type="checkbox" onchange="changeTheme(this.checked)">
+            <span class="slider round"></span>
+        </label>
+        <script>
+            function changeTheme(isChecked) {
+                if (isChecked) {
+                    document.body.setAttribute('dark', '');
+                } else {
+                    document.body.removeAttribute('dark');
+                }
+            }
+        </script>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <section class="header__first-section">
+                    <div class="header__row_logo">
+                        <div class="header__logo_img">
+                            <img src="img/lopo.svg" alt="">
+                        </div>
+                        <div class="header__logo_name">
+                            <a href="index.html">crypter</a>
+                        </div>
+                        <div class="header__logo_border"></div>
+                    </div>
+                    <div class="header__row_menu">
+                        <ul class="header__menu">
+                            <li class="header__menu_item"><a href="#">Discover</a></li>
+                            <li class="header__menu_item"><a href="#">How it work</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="header__second-section">
+                    <div class="header__row_search">
+                        <div class="header__search">
+                            <form class="header__search_form" action="">
+                                <input type="text" placeholder="Search">
+                                <button> <img src="img/searchicon.svg" alt=""></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header__row_notification">
+                        <div class="header__notification">
+                            <div class="header__notification_item">
+                            </div>
+                            <img src="img/bell.svg" alt="" class="header__notification_img">
+                        </div>
+                    </div>
+                    <div class="header__row_btn-upload">
+                        <a href="#">Upload</a>
+                    </div>
+                    <div class="header__row_btn-cwallet">
+                        <a href="#">Connect Wallet</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="front-block__section">
+            ] <div class="front-block">
+                <div class="container">
+                    <div class="front-block__row">
+                        <div class="front-block__row_subtitle">
+                            <h3>
+                                Create, explore, & collect digital art NFTs.
+                            </h3>
+                        </div>
+                        <div class="front-block__row_title">
+                            <h2>
+                                The new creative economy.
+                            </h2>
+                        </div>
+                        <div class="front-block__row_btn">
+                            <a href="#">Start your search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="front-content-section">
+            <div class="container">
+                <div class="front-content__row">
+                    <div class="front-content__row_img">
+                        <div class="front-content__img_picture">
+                            <img src="img/frontcontent-img.png" alt="">
+                        </div>
+                        <div class="front-content__img_audio">
+                            <audio controls>
+                                <source src="audio/plenka - Call Me.mp3" type="audio/ogg; codecs=vorbis">
+                                <source src="audio/plenka - Call Me.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="front-content__row_content">
+                        <div class="front-content__content_name">
+                            <h1>the creator network®</h1>
+                        </div>
+                        <div class="front-content__content_description">
+                            <div class="front-content__description_creator">
+                                <div class="front-content__creator_face">
+                                    <img src="img/facefc.png" alt="">
+                                </div>
+                                <div class="front-content__creator_title">
+                                    <h4>Creator</h4>
+                                    <p>Enrico Cole</p>
+                                </div>
+                            </div>
+                            <div class="front-content__description_price">
+                                <div class="front-content__price_face">
+                                    <img src="img/pricefc.svg" alt="">
+                                </div>
+                                <div class="front-content__price_title">
+                                    <h4>Creator</h4>
+                                    <p>Enrico Cole</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auction-card">
+                            <div class="auction-card-center">
+                                <div class="auction-card__header">
+                                    <h3>Current Bid</h3>
+                                </div>
+                                <div class="auction-card__price">
+                                    <p>1.00 ETH</p>
+                                </div>
+                                <div class="auction-card__subprice">
+                                    <p>$3,618.36</p>
+                                </div>
+                                <div class="auction-card__timer">
+                                    <div class="auction-card__timer_header">
+                                        <h3>Auction ending in</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-card__timer_row">
+                                <div class="auction-card__timer_hrs">
+                                    <p class="hrs__number">19</p>
+                                    <p class="hrs__title">Hrs</p>
+                                </div>
+                                <div class="auction-card__timer_mins">
+                                    <p class="mins__number">24</p>
+                                    <p class="mins__title">mins</p>
+                                </div>
+                                <div class="auction-card__timer_secs">
+                                    <p class="secs__number">19</p>
+                                    <p class="secs__title">secs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="front-content__content_btn-place">
+                            <a href="#">Place a bid</a>
+                        </div>
+                        <div class="front-content__content_btn-view">
+                            <a href="#">View item</a>
+                        </div>
+                        <div class="front-content__arrows">
+                            <div class="front-content__arrows_prev">
+                                <a href="#"><img src="img/prev.svg" alt="prev"></a>
+                            </div>
+                            <div class="front-content__arrows_next">
+                                <a href="#"><img src="img/next.svg" alt="next"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="place-row">
+            <div class="container">
+                <div class="place-row__row">
+                    <div class="place-row__row_slider">
+                        <div class="place-row__slider_main-card">
+                            <div class="place-row__main-card-img">
+                                <img src="img/place-row-mainimg.png" alt="">
+                            </div>
+                            <div class="place-row__main-card_title">
+                                <div class="place-row__main-card-fblock">
+                                    <div class="place-row__title_img">
+                                        <img src="img/facefc.png" alt="">
+                                    </div>
+                                    <div class="place-row__title_name">
+                                        <h3>The future of ETH®</h3>
+                                        <p>18 in stock</p>
+                                    </div>
+                                </div>
+                                <div class="place-row__title_price">
+                                    <h4>Highest bid</h4>
+                                    <p>1.125 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="place-row__slider_all-users">
+                            <div class="place-row__all-users_user">
+                                <div class="place-row__user_img">
+                                    <img src="img/02placerow.png" alt="">
+                                </div>
+                                <div class="place-row__user_info">
+                                    <div class="place-row__info_title">
+                                        <h3>ETH never die</h3>
+                                    </div>
+                                    <div class="place-row__info_persona">
+                                        <img src="img/01.png" alt="">
+                                        <p>0.27 ETH</p>
+                                        <h4>1 of 12</h4>
+                                    </div>
+                                    <div class="place-row__user_btn">
+                                        <a href="#">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-row__all-users_user">
+                                <div class="place-row__user_img">
+                                    <img src="img/03placerow.png" alt="">
+                                </div>
+                                <div class="place-row__user_info">
+                                    <div class="place-row__info_title">
+                                        <h3>Future coming soon</h3>
+                                    </div>
+                                    <div class="place-row__info_persona">
+                                        <img src="img/02.png" alt="">
+                                        <p>0.27 ETH</p>
+                                        <h4>1 of 3</h4>
+                                    </div>
+                                    <div class="place-row__user_btn">
+                                        <a href="#">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-row__all-users_user">
+                                <div class="place-row__user_img">
+                                    <img src="img/01placerow.png" alt="">
+                                </div>
+                                <div class="place-row__user_info">
+                                    <div class="place-row__info_title">
+                                        <h3>Elon Musk silver coin 3d print</h3>
+                                    </div>
+                                    <div class="place-row__info_persona">
+                                        <img src="img/01.png" alt="">
+                                        <p>0.27 ETH</p>
+                                        <h4>1 of 4</h4>
+                                    </div>
+                                    <div class="place-row__user_btn">
+                                        <a href="#">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-row__creators">
+                        <div class="place-row__creators_header">
+                            <h3>Latest upload from creators 🔥</h3>
+                        </div>
+                        <div class="place-row__creators_columns">
+                            <div class="place-row__creators_column">
+                                <div class="place-row__column_img">
+                                    <div class="place-row__img_number">
+                                        <p>6</p>
+                                    </div>
+                                    <img src="img/01-1.png" alt="">
+                                </div>
+                                <div class="place-row__column_names">
+                                    <p>Payton Harris</p>
+                                    <h4>2.456 <span class="hidd">ETH</span></h4>
+                                </div>
+                            </div>
+                            <div class="place-row__creators_column">
+                                <div class="place-row__column_img">
+                                    <div class="place-row__img_number">
+                                        <p>2</p>
+                                    </div>
+                                    <img src="img/02-2.png" alt="">
+                                </div>
+                                <div class="place-row__column_names">
+                                    <p>Anita Bins</p>
+                                    <h4>2.456 <span class="hidd">ETH</span></h4>
+                                </div>
+                            </div>
+                            <div class="place-row__creators_column">
+                                <div class="place-row__column_img">
+                                    <div class="place-row__img_number">
+                                        <p>3</p>
+                                    </div>
+                                    <img src="img/01-3.png" alt="">
+                                </div>
+                                <div class="place-row__column_names">
+                                    <p>Joana Wuckert</p>
+                                    <h4>2.456 <span class="hidd">ETH</span></h4>
+                                </div>
+                            </div>
+                            <div class="place-row__creators_column">
+                                <div class="place-row__column_img">
+                                    <div class="place-row__img_number">
+                                        <p>4</p>
+                                    </div>
+                                    <img src="img/01-2.png" alt="">
+                                </div>
+                                <div class="place-row__column_names">
+                                    <p>Lorena Ledner</p>
+                                    <h4>2.456 <span class="hidd">ETH</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="place-row__creators_btn">
+                            <a href="#">Discover more <img src="img/arrowright.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sellers">
+            <div class="container">
+                <div class="sellers__header_row">
+                    <div class="sellers__headers">
+                        <div class="sellers__headers_title">
+                            <h2>Popular</h2>
+                        </div>
+                        <div class="sellers__headers_discription">
+                            <a href="#">Sellers <img src="img/Shape.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="sellers__dropdown">
+                        <div class="ferst__drop">
+                            <h1>TIMEFRAME</h1>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <div class="drop__text">
+                                    <div class="text">Today</div>
+                                </div>
+                                <div class="drop__img">
+                                    <div class="img"><img src="img/Small.png" alt=""></div>
+                                </div>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Today</a>
+                                <a href="#">Today</a>
+                                <a href="#">Today</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sellers__slider">
+                    <div class="sellers__slider_item">
+                        <form class="sell-time">
+                            <input type="text" placeholder="Today">
+                            <button class="sell-time-btn">
+                                <img src="img/Shape.png" alt="">
+                            </button>
+                        </form>
+                        <div class="slider__item_top">
+                            <div class="slider__top_place">
+                                <div class="slider__top_place-1">
+                                    <p><img src="img/Line.png" alt="">#1</p>
+                                </div>
+                            </div>
+                            <div class="wrapper_place">
+                                <div class="slider__top_add">
+                                    <a href="#"><img src="img/add.svg" alt=""></a>
+                                </div>
+                                <div class="slider__top_link">
+                                    <a href="#"><img src="img/link.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item_bottom">
+                            <div class="slider__bottom_face">
+                                <img src="img/1.png" alt="">
+                                <div class="face-diamond">
+                                    <img src="img/diamond01.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="slider__bottom_header">
+                                <h3>Payton Harris</h3>
+                            </div>
+                            <div class="slider__bottom_price">
+                                <p>2.456 <span class="hidd">ETH</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sellers__slider_item">
+                        <div class="slider__item_top">
+                            <div class="slider__top_place">
+                                <div class="slider__top_place-2">
+                                    <p><img src="img/Line2.png" alt="">#1</p>
+                                </div>
+                            </div>
+                            <div class="wrapper_place">
+                                <div class="slider__top_add">
+                                    <a href="#"><img src="img/add.svg" alt=""></a>
+                                </div>
+                                <div class="slider__top_link">
+                                    <a href="#"><img src="img/link.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item_bottom">
+                            <div class="slider__bottom_face">
+                                <img src="img/2.png" alt="">
+                                <div class="face-diamond">
+                                    <img src="img/diamond01.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="slider__bottom_header">
+                                <h3>Payton Harris</h3>
+                            </div>
+                            <div class="slider__bottom_price">
+                                <p>2.456 <span class="hidd">ETH</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sellers__slider_item">
+                        <div class="slider__item_top">
+                            <div class="slider__top_place">
+                                <div class="slider__top_place-3">
+                                    <p><img src="img/Line3.png" alt="">#1</p>
+                                </div>
+                            </div>
+                            <div class="wrapper_place">
+                                <div class="slider__top_add">
+                                    <a href="#"><img src="img/add.svg" alt=""></a>
+                                </div>
+                                <div class="slider__top_link">
+                                    <a href="#"><img src="img/link.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item_bottom">
+                            <div class="slider__bottom_face">
+                                <img src="img/3.png" alt="">
+                                <div class="face-diamond">
+                                    <img src="img/diamond01.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="slider__bottom_header">
+                                <h3>Payton Harris</h3>
+                            </div>
+                            <div class="slider__bottom_price">
+                                <p>2.456 <span class="hidd">ETH</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sellers__slider_item">
+                        <div class="slider__item_top">
+                            <div class="slider__top_place">
+                                <div class="slider__top_place-4">
+                                    <p><img src="img/Line4.png" alt="">#1</p>
+                                </div>
+                            </div>
+                            <div class="wrapper_place">
+                                <div class="slider__top_add">
+                                    <a href="#"><img src="img/add.svg" alt=""></a>
+                                </div>
+                                <div class="slider__top_link">
+                                    <a href="#"><img src="img/link.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item_bottom">
+                            <div class="slider__bottom_face">
+                                <img src="img/4.png" alt="">
+                                <div class="face-diamond">
+                                    <img src="img/diamond01.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="slider__bottom_header">
+                                <h3>Payton Harris</h3>
+                            </div>
+                            <div class="slider__bottom_price">
+                                <p>2.456 <span class="hidd">ETH</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sellers__slider_item">
+                        <div class="slider__item_top">
+                            <div class="slider__top_place">
+                                <div class="slider__top_place-5">
+                                    <p><img src="img/Line4.png" alt="">#1</p>
+                                </div>
+                            </div>
+                            <div class="wrapper_place">
+                                <div class="slider__top_add">
+                                    <a href="#"><img src="img/add.svg" alt=""></a>
+                                </div>
+                                <div class="slider__top_link">
+                                    <a href="#"><img src="img/link.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item_bottom">
+                            <div class="slider__bottom_face">
+                                <img src="img/5.png" alt="">
+                                <div class="face-diamond">
+                                    <img src="img/diamond01.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="slider__bottom_header">
+                                <h3>Payton Harris</h3>
+                            </div>
+                            <div class="slider__bottom_price">
+                                <p>2.456 <span class="hidd">ETH</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hot-bid">
+            <div class="container">
+                <div class="hot-bid__header_row">
+                    <div class="hot-bid__headers">
+                        <div class="hot-bid__headers_discription">
+                            <a href="#">Hot bid</a>
+                        </div>
+                    </div>
+                    <div class="hot-bid__front-content__arrows">
+                        <div class="hot-bid__front-content__arrows_prev">
+                            <a href="#"><img src="img/prev.svg" alt="prev"></a>
+                        </div>
+                        <div class="hot-bid__front-content__arrows_next">
+                            <a href="#"><img src="img/next.svg" alt="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot-bid__slider">
+                    <div class="hot-bid__slider_item">
+                        <div class="hb__slider__item_top">
+                            <img src="img/product img.png" alt="">
+                        </div>
+                        <div class="hb__slider__item_bottom">
+                            <div class="hb__slider__bottom_header">
+                                <div class="hb__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="hb__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="hb__hr"></div>
+                            <div class="hb__slider__item_bottom-info">
+                                <div class="hb__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="hb__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hot-bid__slider_item">
+                        <div class="hb__slider__item_top">
+                            <img src="img/product img1.png" alt="">
+                            <!-- <div class="hb__slider__top_place">
+                                <div class="hb__slider__top_place-2">
+                                    <p><img src="img/Line2.png" alt="">#1</p>
+                                </div>
+                            </div>
+                            <div class="wrapper_place">
+                                <div class="hb__slider__top_add">
+                                    <a href="#"><img src="img/add.svg" alt=""></a>
+                                </div>
+                                <div class="hb__slider__top_link">
+                                    <a href="#"><img src="img/link.svg" alt=""></a>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="hb__slider__item_bottom">
+                            <div class="hb__slider__bottom_header">
+                                <div class="hb__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="hb__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="hb__hr"></div>
+                            <div class="hb__slider__item_bottom-info">
+                                <div class="hb__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="hb__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hot-bid__slider_item">
+                        <div class="hb__slider__item_top">
+                            <img src="img/product img2.png" alt="">
+                        </div>
+                        <div class="hb__slider__item_bottom">
+                            <div class="hb__slider__bottom_header">
+                                <div class="hb__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="hb__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="hb__hr"></div>
+                            <div class="hb__slider__item_bottom-info">
+                                <div class="hb__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="hb__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hot-bid__slider_item">
+                        <div class="hb__slider__item_top">
+                            <img src="img/product img3.png" alt="">
+                        </div>
+                        <div class="hb__slider__item_bottom">
+                            <div class="hb__slider__bottom_header">
+                                <div class="hb__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="hb__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="hb__hr"></div>
+                            <div class="hb__slider__item_bottom-info">
+                                <div class="hb__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="hb__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hot-coll">
+            <div class="container">
+                <div class="hot-coll__header_row">
+                    <div class="hot-coll__headers">
+                        <div class="hot-coll__headers_discription">
+                            <a href="#">Hot collections</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot-coll__slider">
+                    <div class="hot-coll__slider_item">
+                        <div class="hs__slider__item_top">
+                            <img src="img/img stack1.png" alt="">
+                        </div>
+                        <div class="hs__slider__item_bottom">
+                            <div class="hs__slider__bottom_header">
+                                <div class="hs__place-row__info_persona">
+                                    <h3>Awesome collection</h3>
+                                    <p>28 items</p>
+                                </div>
+                            </div>
+                            <div class="hs__slider__bottom_price">
+                                <img src="img/011.png" alt="">
+                                <p>By Tyrese Littel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hot-coll__slider_item">
+                        <div class="hs__slider__item_top">
+                            <img src="img/img stack2.png" alt="">
+                        </div>
+                        <div class="hs__slider__item_bottom">
+                            <div class="hs__slider__bottom_header">
+                                <div class="hs__place-row__info_persona">
+                                    <h3>Awesome collection</h3>
+                                    <p>28 items</p>
+                                </div>
+                            </div>
+                            <div class="hs__slider__bottom_price">
+                                <img src="img/011.png" alt="">
+                                <p>By Trisha Grant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hot-coll__slider_item">
+                        <div class="hs__slider__item_top">
+                            <img src="img/img stack3.png" alt="">
+                        </div>
+                        <div class="hs__slider__item_bottom">
+                            <div class="hs__slider__bottom_header">
+                                <div class="hs__place-row__info_persona">
+                                    <h3>Awesome collection</h3>
+                                    <p>28 items</p>
+                                </div>
+                            </div>
+                            <div class="hs__slider__bottom_price">
+                                <img src="img/011.png" alt="">
+                                <p>By Casimer Windler</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discover">
+            <div class="container">
+                <div class="discover__header_row">
+                    <div class="discover__headers">
+                        <div class="discover__headers_discription">
+                            <a href="#">Discover</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover__dropdown">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <div class="drop__text">
+                                <div class="text">Recently added</div>
+                            </div>
+                            <div class="drop__img">
+                                <div class="img"><img src="img/Small.png" alt=""></div>
+                            </div>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Recently added</a>
+                            <a href="#">Recently added</a>
+                            <a href="#">Recently added</a>
+                        </div>
+                    </div>
+                    <div class="discover__row_menu">
+                        <ul class="discover__menu">
+                            <li class="discover__menu_itemm">
+                                <div class="all-items"><a href="#">All items</a></div>
+                            </li>
+                            <li class="discover__menu_item"><a href="#">Art</a></li>
+                            <li class="discover__menu_item"><a href="#">Game</a></li>
+                            <li class="discover__menu_item"><a href="#">Photography</a></li>
+                            <li class="discover__menu_item"><a href="#">Music</a></li>
+                            <li class="discover__menu_item"><a href="#">Video</a></li>
+                        </ul>
+                    </div>
+                    <div class="blue__button">
+                        <a href="#">Filter</a>
+                        <img src="img/x.png" alt="">
+                    </div>
+                </div>
+                <div class="ds__hr"></div>
+                <div class="ds__prise">
+                    <div class="sellers__dropdown">
+                        <div class="ferst__drop">
+                            <h1>PRICE</h1>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <div class="drop__text">
+                                    <div class="text">Highest price</div>
+                                </div>
+                                <div class="drop__img">
+                                    <div class="img"><img src="img/Small.png" alt=""></div>
+                                </div>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Highest price</a>
+                                <a href="#">Highest price</a>
+                                <a href="#">Highest price</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sellers__dropdown">
+                        <div class="ferst__drop">
+                            <h1>LIKES</h1>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <div class="drop__text">
+                                    <div class="text">Most liked</div>
+                                </div>
+                                <div class="drop__img">
+                                    <div class="img"><img src="img/Small.png" alt=""></div>
+                                </div>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Most liked</a>
+                                <a href="#">Most liked</a>
+                                <a href="#">Most liked</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sellers__dropdown">
+                        <div class="ferst__drop">
+                            <h1>CREATOR</h1>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <div class="drop__text">
+                                    <div class="text">Verified only</div>
+                                </div>
+                                <div class="drop__img">
+                                    <div class="img"><img src="img/Small.png" alt=""></div>
+                                </div>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Verified only</a>
+                                <a href="#">Verified only</a>
+                                <a href="#">Verified only</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sellers__dropdown">
+                        <div class="ferst__drop">
+                            <h1>PRICE RANGE</h1>
+                        </div>
+                        <div class="menu__button">
+                            <img src="img/Range bar.png" alt="">
+                            <div class="texts">
+                                <div class="dr__text1">
+                                    <p>0.01 ETH</p>
+                                </div>
+                                <div class="dr__text2">
+                                    <p>10 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover__slider">
+                    <div class="discover__slider_item">
+                        <div class="ds__slider__item_top">
+                            <img src="img/Discover/product img.png" alt="">
+                        </div>
+                        <div class="ds__slider__item_bottom">
+                            <div class="ds__slider__bottom_header">
+                                <div class="ds__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="ds__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="dss__hr"></div>
+                            <div class="ds__slider__item_bottom-info">
+                                <div class="ds__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="ds__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__slider_item">
+                        <div class="ds__slider__item_top">
+                            <img src="img/Discover/product img-1.png" alt="">
+                            <!-- <div class="ds__slider__top_place">
+                                <div class="ds__slider__top_place-2">
+                                    <p><img src="img/Line2.png" alt="">#1</p>
+                                </div>
+                            </div>
+                            <div class="wrapper_place">
+                                <div class="ds__slider__top_add">
+                                    <a href="#"><img src="img/add.svg" alt=""></a>
+                                </div>
+                                <div class="ds__slider__top_link">
+                                    <a href="#"><img src="img/link.svg" alt=""></a>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="ds__slider__item_bottom">
+                            <div class="ds__slider__bottom_header">
+                                <div class="ds__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="ds__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="dss__hr"></div>
+                            <div class="ds__slider__item_bottom-info">
+                                <div class="ds__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="ds__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__slider_item">
+                        <div class="ds__slider__item_top">
+                            <img src="img/Discover/product img-2.png" alt="">
+                        </div>
+                        <div class="ds__slider__item_bottom">
+                            <div class="ds__slider__bottom_header">
+                                <div class="ds__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="ds__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="dss__hr"></div>
+                            <div class="ds__slider__item_bottom-info">
+                                <div class="ds__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="ds__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__slider_item">
+                        <div class="ds__slider__item_top">
+                            <img src="img/Discover/product img-3.png" alt="">
+                        </div>
+                        <div class="ds__slider__item_bottom">
+                            <div class="ds__slider__bottom_header">
+                                <div class="ds__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="ds__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="dss__hr"></div>
+                            <div class="ds__slider__item_bottom-info">
+                                <div class="ds__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="ds__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover__slider1">
+                    <div class="discover__slider_item">
+                        <div class="ds__slider__item_top">
+                            <img src="img/Discover/product img-4.png" alt="">
+                        </div>
+                        <div class="ds__slider__item_bottom">
+                            <div class="ds__slider__bottom_header">
+                                <div class="ds__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="ds__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="dss__hr"></div>
+                            <div class="ds__slider__item_bottom-info">
+                                <div class="ds__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="ds__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__slider_item">
+                        <div class="ds__slider__item_top">
+                            <img src="img/Discover/product img-5.png" alt="">
+                        </div>
+                        <div class="ds__slider__item_bottom">
+                            <div class="ds__slider__bottom_header">
+                                <div class="ds__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="ds__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="dss__hr"></div>
+                            <div class="ds__slider__item_bottom-info">
+                                <div class="ds__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="ds__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__slider_item">
+                        <div class="ds__slider__item_top">
+                            <img src="img/Discover/product img-6.png" alt="">
+                        </div>
+                        <div class="ds__slider__item_bottom">
+                            <div class="ds__slider__bottom_header">
+                                <div class="ds__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="ds__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="dss__hr"></div>
+                            <div class="ds__slider__item_bottom-info">
+                                <div class="ds__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="ds__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__slider_item">
+                        <div class="ds__slider__item_top">
+                            <img src="img/Discover/product img-7.png" alt="">
+                        </div>
+                        <div class="ds__slider__item_bottom">
+                            <div class="ds__slider__bottom_header">
+                                <div class="ds__place-row__info_persona">
+                                    <h3>Amazing digital art</h3>
+                                    <p>2.45 ETH</p>
+                                </div>
+                            </div>
+                            <div class="ds__slider__bottom_price">
+                                <img src="img/avatars.png" alt="">
+                                <p>3 in stock</p>
+                            </div>
+                            <div class="dss__hr"></div>
+                            <div class="ds__slider__item_bottom-info">
+                                <div class="ds__place-row__info_personaa">
+                                    <img src="img/Line-botton.png" alt="">
+                                    <p><span class="hidd">Highest bid </span>0.001 ETH</p>
+                                    <div class="ds__place-row__info_personaa-text">
+                                        <p>New bid 🔥</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="front-block">
+                <div class="container">
+                    <div class="front-block__row">
+                        <div class="ds__front-block__row_btn">
+                            <a href="#">Load more</a>
+                            <img src="img/Line124.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main-hr"></div>
+        <section class="cta">
+            <div class="container">
+                <div class="front-content__row">
+                    <div class="front-content__row_content">
+                        <div class="cta__front-block__row">
+                            <div class="cta__front-block__row_subtitle">
+                                <h3>
+                                    Save your time with Stacks
+                                </h3>
+                            </div>
+                            <div class="cta__front-content__content_name">
+                                <h1>Earn free crypto with Crypter</h1>
+                            </div>
+                            <div class="cta__front-block__row_btn">
+                                <a href="#">A creative agency that lead and inspire</a>
+                            </div>
+                        </div>
+                        <div class="cta__front-content__content_description">
+                            <div class="cta__row_btn-upload">
+                                <a href="#">Upload</a>
+                            </div>
+                            <div class="cta__row_btn-cwallet">
+                                <a href="#">Connect Wallet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="front-content__row_img">
+                        <div class="cta__front-content__img_picture">
+                            <img src="img/cta_img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-main-row">
+                    <div class="footer-column">
+                        <div class="footer-avatar">
+                            <img src="img/log.png" alt="">
+                        </div>
+                        <div class="footer-information">
+                            The New Creative Economy.
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="footer-column-sub">
+                            <div class="f-h">Crypter.</div>
+                            <div class="f-m">
+                                <div class="f-m-info">Discover</div>
+                                <div class="f-m-info">Connect Wallet</div>
+                                <div class="f-m-info">Create item</div>
+                            </div>
+                        </div>
+                        <div class="footer-column-sub">
+                            <div class="f-h">Info</div>
+                            <div class="f-m">
+                                <div class="f-m-info">Download</div>
+                                <div class="f-m-info">Demos</div>
+                                <div class="f-m-info">Support</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column1">
+                        <div class="f-h">Join Newsletter</div>
+                        <div class="last-col-info">Subscribe our newsletter to get more free design course and resource
+                        </div>
+                        <form action="" class="email-blin">
+                            <input class="email-blin__input" type="email" placeholder="Enter your email">
+                            <button class="email-blin__btn">
+                                <img src="img/right.png" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-sub-row">
+                    <div class="copy">Copyright © 2021 UI8 LLC. All rights reserved</div>
+                    <div class="cookies">We use cookies for better service.</div>
+                    <a href="#" title="dasfasfga">Accept</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
