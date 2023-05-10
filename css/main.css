@@ -1,0 +1,181 @@
+:root {
+  --var-wc1: #FCFCFD;
+  --var-wc2: #777E90;
+  --var-wc3: #23262F;
+  --var-wc4: #E6E8EC;
+  --var-wc5: #F4F5F6;
+  --var-wc6: #353945;
+  --var-wc7: #141416;
+  --var-wc8: #23262F;
+  --var-wc9: #FCFCFD;
+  --var-wc12: #FCFCFD;
+  --var-wc13: #FCFCFD;
+  --var-wc16: #777E90;
+  --var-wc17: #E6E8EC;
+  --var-wc18: #FCFCFD;
+  --var-wc0: #E6E8EC;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+[dark] {
+  --var-wc1: #141416;
+  --var-wc2: #777E90;
+  --var-wc3: #F4F5F6;
+  --var-wc4: #353945;
+  --var-wc5: #23262F;
+  --var-wc6: #E6E8EC;
+  --var-wc7: #FCFCFD;
+  --var-wc8: #FCFCFD;
+  --var-wc12: #23262F;
+  --var-wc13: #23262f00;
+  --var-wc14: #353945;
+  --var-wc16: #353945;
+  --var-wc17: #62677500;
+  --var-wc18: #FCFCFD;
+  --var-wc0: #353945;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+html {
+  height: 100%
+}
+
+body {
+  line-height: 1;
+  background: var(--var-wc1);
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+a {
+  text-decoration: none;
+}
